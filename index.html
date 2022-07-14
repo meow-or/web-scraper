@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/normalize.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <title>table</title>
+  </head>
+  <body class="page">
+
+    <div class="page__container">
+
+      <header class="header">
+        <h1 class="header__title">таблица</h1>
+      </header>
+
+      <main>
+        <ul class="table">
+
+          <li class="table__row">
+            <ul class="table__row-list table__row-list_header">
+              <li class="table__row-item">номер</li>
+              <li class="table__row-item">ООС</li>
+              <li class="table__row-item">ссылка</li>
+              <li class="table__row-item">email</li>
+              <li class="table__row-item">документы</li>
+            </ul>
+          </li>
+
+        </ul>
+      </main>
+
+      <template id="table-row">
+        <li class="table__row table__row-rendered-list">
+          <ul class="table__row-list">
+            <li class="table__row-item table__row-item_number"></li>
+            <li class="table__row-item table__row-item_oos"></li>
+            <li class="table__row-item table__row-item_link"></li>
+            <li class="table__row-item table__row-item_email"></li>
+            <li class="table__row-item table__row-item_documents"></li>
+          </ul>
+        </li>
+      </template>
+
+    </div>
+
+    <script type="module" src="./src/app.js"></script>
+    
+    
+  </body>
+</html>

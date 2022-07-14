@@ -1,0 +1,48 @@
+.page {
+  background: #fff;
+  color: rgb(0, 0, 0);
+  font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  text-rendering: optimizeLegibility;
+  font-size: 14px;
+}
+
+.page__container {
+  min-width: 720px;
+  max-width: 1280px;
+  margin: 60px auto 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header__title {
+  text-align: center;
+}
+
+.table {
+  background:rgb(220, 233, 236);
+  display: grid;
+  row-gap: 2px;
+  padding: 2px;
+  border: 1px solid gray;
+  list-style: none;
+  margin: 0;
+}
+
+.table__row-list {
+  display: grid;
+  grid-template-columns: 80px repeat(3, 150px) 1fr;
+  grid-template-rows: minmax(25px, auto);
+  column-gap: 2px;
+  list-style: none;
+  padding: 0;
+}
+
+.table__row-item {
+  border: 1px solid gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+}
