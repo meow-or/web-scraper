@@ -8,7 +8,6 @@
 
 .page__container {
   min-width: 720px;
-  max-width: 1280px;
   margin: 60px auto 60px;
   display: flex;
   justify-content: center;
@@ -32,7 +31,7 @@
 
 .table__row-list {
   display: grid;
-  grid-template-columns: 80px repeat(3, 150px) 1fr;
+  grid-template-columns: 80px 1fr repeat(2, 1.5fr) 1fr;
   grid-template-rows: minmax(25px, auto);
   column-gap: 2px;
   list-style: none;

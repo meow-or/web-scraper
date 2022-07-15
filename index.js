@@ -5,9 +5,10 @@ const express = require('express');
 
 const app = express();
 const cors = require('cors');
-app.use(cors());
+app.use(cors({
+  origin: ['http://127.0.0.1:5500']
+}));
 
-//let procedureDetails = [];
 const procedureListUrl = 'https://etp.eltox.ru/registry/procedure';
 
 app.get('/', function (req, res) {
@@ -16,12 +17,7 @@ app.get('/', function (req, res) {
 
 app.get('/results', (req, res) => {
 
-  axios({
-    url: procedureListUrl,
-    headers: {
-      'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.1.2222.33 Safari/537.36'
-    },
-  })
+  axios(procedureListUrl)
       .then(response => {
         const html = response.data;
         const getProcedureListHtml = cheerio.load(html);

@@ -1,0 +1,7 @@
+CREATE TABLE procedures (
+procedureNum INT(4) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    oos VARCHAR(100) NOT NULL,
+    link VARCHAR(100) NOT NULL,
+    email VARCHAR(50),
+    documents VARCHAR(100) NOT NULL
+);

@@ -1,3 +1,4 @@
+
 const tableRowTemplate = document.querySelector('#table-row').content.querySelector('.table__row');
 const tableRowContainer = document.querySelector('.table');
 const listOfRowsFragment = document.createDocumentFragment();
@@ -24,16 +25,14 @@ const clearRowsContainer = () => {
 }
 
 export const renderTable = (data) => {
-
-  console.log(data)
-
+  
   data
   .slice()
   .forEach(
     ({procedureId, procedureNumber, procedurePageLink}) => {
 
     addRowData(
-      {procedureId, procedureNumber, procedurePageLink})
+      {procedureId, procedureNumber, procedurePageLink});
   })
 
   clearRowsContainer();
